@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024-2025 IT 채용 동향 분석</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .author-info {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #2d3748;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .job-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .card {
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .card.network {
+            background: #ebf8ff;
+            border-left-color: #3182ce;
+        }
+        
+        .card.security {
+            background: #fff5f5;
+            border-left-color: #e53e3e;
+        }
+        
+        .card.data {
+            background: #f0fff4;
+            border-left-color: #38a169;
+        }
+        
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card.network h3 { color: #2c5282; }
+        .card.security h3 { color: #c53030; }
+        .card.data h3 { color: #2f855a; }
+        
+        .card p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+        
+        .card .salary {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+        
+        .card .jobs-count {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        th {
+            background: #edf2f7;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        tr:hover {
+            background: #f7fafc;
+        }
+        
+        .company-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .company-list li {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #667eea;
+            background: #f7fafc;
+            border-radius: 4px;
+        }
+        
+        .company-list strong {
+            color: #667eea;
+            font-size: 1.1rem;
+        }
+        
+        .company-list .detail {
+            margin-top: 0.3rem;
+            color: #666;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+            
+            th, td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>2024-2025 IT 채용 동향 분석</h1>
+        <p>네트워크/보안/데이터 직무 비교</p>
+        <div class="author-info">
+            작성자: 홍길동 | 작성일: 2025년 1월 8일
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>직무별 개요</h2>
+            <div class="job-cards">
+                <div class="card network">
+                    <h3>네트워크 엔지니어</h3>
+                    <p>기업 네트워크 인프라 설계 및 운영 전문가</p>
+                    <p class="salary">연봉: 3,500만원 ~ 7,000만원</p>
+                    <p class="jobs-count">📊 채용 공고: 245개</p>
+                </div>
+                
+                <div class="card security">
+                    <h3>보안 엔지니어</h3>
+                    <p>정보보호 시스템 구축 및 보안 위협 대응</p>
+                    <p class="salary">연봉: 4,000만원 ~ 8,000만원</p>
+                    <p class="jobs-count">📊 채용 공고: 312개</p>
+                </div>
+                
+                <div class="card data">
+                    <h3>데이터 엔지니어</h3>
+                    <p>빅데이터 파이프라인 설계 및 데이터 인프라 구축</p>
+                    <p class="salary">연봉: 4,500만원 ~ 9,000만원</p>
+                    <p class="jobs-count">📊 채용 공고: 428개</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>필요 기술 비교</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>직무</th>
+                        <th>필수 기술</th>
+                        <th>우대 기술</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>네트워크 엔지니어</strong></td>
+                        <td>TCP/IP, 라우팅/스위칭, 방화벽</td>
+                        <td>CCNA/CCNP, SDN, 클라우드 네트워킹</td>
+                    </tr>
+                    <tr>
+                        <td><strong>보안 엔지니어</strong></td>
+                        <td>보안 솔루션, 취약점 분석, 침해대응</td>
+                        <td>정보보안기사, CISSP, 모의해킹</td>
+                    </tr>
+                    <tr>
+                        <td><strong>데이터 엔지니어</strong></td>
+                        <td>Python, SQL, Spark/Hadoop</td>
+                        <td>AWS/GCP, Kafka, Airflow</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>주요 기업별 채용 특징</h2>
+            <ul class="company-list">
+                <li>
+                    <strong>삼성전자</strong>
+                    <div class="detail">주력 직무: 네트워크 엔지니어</div>
+                    <div class="detail">특징: 글로벌 네트워크 인프라 운영, 5G/6G 연구개발</div>
+                </li>
+                <li>
+                    <strong>네이버</strong>
+                    <div class="detail">주력 직무: 데이터 엔지니어</div>
+                    <div class="detail">특징: 대규모 검색 데이터 처리, AI/ML 파이프라인 구축</div>
+                </li>
+                <li>
+                    <strong>카카오</strong>
+                    <div class="detail">주력 직무: 보안 엔지니어, 데이터 엔지니어</div>
+                    <div class="detail">특징: 금융보안 강화, 실시간 데이터 분석 플랫폼</div>
+                </li>
+                <li>
+                    <strong>쿠팡</strong>
+                    <div class="detail">주력 직무: 데이터 엔지니어</div>
+                    <div class="detail">특징: 물류 최적화 데이터 분석, 실시간 추천 시스템</div>
+                </li>
+                <li>
+                    <strong>LG CNS</strong>
+                    <div class="detail">주력 직무: 네트워크/보안 엔지니어</div>
+                    <div class="detail">특징: 기업 IT 인프라 통합 솔루션, 클라우드 보안</div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>이 데이터는 2025년 채용 시장 현황을 기반으로 한 분석입니다</p>
+        <p>작성일: 2025년 1월 8일</p>
+        <p>바이브코딩 혼공학습단 1주차 프로젝트</p>
+    </footer>
+</body>
+</html>
